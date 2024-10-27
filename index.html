@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fashion industry trends 2024 with sustainability tips">
     <title>Fashion Industry Insights 2024</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for styling -->
     <style>
+        /* Inline styles for quick layout settings */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse; /* Remove spacing between table cells */
         }
         th, td {
             border: 1px solid #9d82e2;
@@ -30,6 +31,7 @@
 <header>
     <h1>Fashion Industry Insights 2024</h1>
     <nav>
+        <!-- Navigation for quick links within the page -->
         <ul>
             <li><a href="#trends">Fashion Trends</a></li>
             <li><a href="#sustainability">Sustainability</a></li>
@@ -39,28 +41,35 @@
 </header>
 
 <main>
-    <!-- Fashion Trends Section -->
     <article id="trends">
         <h2>Top Fashion Trends for 2024</h2>
-        <p>The fashion industry in 2024 is all about <mark>bold designs</mark> and sustainable materials.</p>
+        <p>The fashion industry in 2024 is all about <strong>bold designs</strong> and sustainable materials.</p>
         <p><del>Last year's trends are gone!</del> <ins>The new ones are in bold colors and oversized accessories.</ins></p>
 
-        <p>CTA <abbr title="Call To Action">CTA</abbr> is essential in modern fashion campaigns.</p>
-
+        <h3>2024 Fashion Trends</h3>
         <audio controls autoplay>
-            <source src="https://siinonmuusika.ee" type="audio/ogg">
+            <source src="http:/siinonmuusika.ee" type="audio/ogg"/>
             Your browser does not support the audio element.
         </audio>
+        <br>
+        <picture>
+           <figure>
+    <img src="https://media.vogue.co.uk/photos/65f165aefaaee6751df370fd/1:1/w_960,c_limit/fall-2024-trend-report-F24_TR_1440x1080-r3.png" alt="2024 Fashion Trends" width="500" height="500">
+    <figcaption>The most striking 2024 fashion trends in a single image. Made by <cite>Vogue</cite>.</figcaption>
+</figure>
+        </picture>
 
-        <figure>
-            <picture>
-                <img src="https://media.vogue.co.uk/photos/65f165aefaaee6751df370fd/1:1/w_960,c_limit/fall-2024-trend-report-F24_TR_1440x1080-r3.png" alt="2024 Fashion Trends" width="500">
-            </picture>
-            <figcaption><cite>The most striking 2024 fashion trends in a single image.</cite></figcaption>
-        </figure>
+       <b> <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your fashion ideas.</b>
+        <pre> 3 MUST HAVES THIS FALL   </pre>
 
-        <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your fashion ideas.</p>
+        <menu>
+            <li>Over-The-Knee <span style="color: #9d82e2;font-weight:bold">Boots</span></li>
+            <li>Boxy Jackets</li>
+            <li>Leopard! <small>Leopard! </small></li>
+        </menu>
+        <br>
 
+        <!-- Dropdown menu for selecting fashion styles -->
         <label for="style-select">Choose a fashion style:</label>
         <select id="style-select" name="styles">
             <optgroup label="Casual Wear">
@@ -72,10 +81,41 @@
                 <option value="avant garde">Avant-garde</option>
             </optgroup>
         </select>
+<br>
+        <table>
+            <caption>Fashion Styles Popularity in 2024</caption>
+            <colgroup>
+                <col  style="background-color: #f2f2f2; display: none;" >
+                <col style="background-color: #e6f7ff; display: none;" >
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Style</th>
+                <th>Popularity</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Boho Chic</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Street Style</td>
+                <td>40%</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="2">Data from fashion survey 2024</td>
+            </tr>
+            </tfoot>
+        </table>
 
         <hr>
 
-        <h3>Watch trends for Fall 2024:</h3>
+        <!-- Video embed from YouTube for visual content -->
+        <h5>Watch trends for Fall 2024:</h5>
+
         <iframe width="500" height="315"
                 src="https://www.youtube.com/embed/0uoEBz5pr9M"
                 title="Fashion Highlights 2024"
@@ -83,51 +123,43 @@
                 allowfullscreen>
         </iframe>
 
-        <blockquote cite="https://vogue.com">
-            "Fashion is the armor to survive the reality of everyday life." - Bill Cunningham
+        <blockquote>
+            <mark>"Fashion is the armor to survive the reality of everyday life." - Bill Cunningham </mark>
         </blockquote>
 
-        <p>Example code snippet:</p>
-        <pre><code>body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-}</code></pre>
+        <!-- Button to open a dialog box with more information -->
+        <button onclick="document.getElementById('fashion-dialog').showModal()">Open Fashion Dialog</button>
+        <dialog id="fashion-dialog">
+            <h2>Exclusive Fashion News!</h2>
+            <i>Get the latest updates on fashion trends directly in your inbox.</i>
+            <button onclick="document.getElementById('fashion-dialog').close()">Close</button>
+        </dialog>
 
-        <p>Sample text in HTML:</p>
-        <pre><samp>&lt;div&gt;Sample Text&lt;/div&gt;</samp></pre>
+        <!-- Adding time element -->
+        <h4>Save the Date!</h4>
+        <p><abbr title="Tallinn Fashion Week">TTF</abbr> <time datetime="2024-10-22">22.-26.October 2024</time></p>
+        <a href="https://tfw.ee/" target="_blank">More info here!</a>
 
-        <!-- Dynamic content using canvas -->
-        <h4>Add this color to your outfit!</h4>
+        <h6>To stand out add this colour to your outfit!</h6>
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #e61313;"></canvas>
         <script>
             const c = document.getElementById("myCanvas");
             let ctx = c.getContext("2d");
+            // Create gradient
             let grd = ctx.createLinearGradient(0, 0, 200, 0);
             grd.addColorStop(0,"red");
             grd.addColorStop(1,"brown");
+            // Fill with gradient
             ctx.fillStyle = grd;
             ctx.fillRect(10,10,150,80);
         </script>
-
-        <!-- Dialog for exclusive content -->
-        <button onclick="document.getElementById('fashion-dialog').showModal()">Open Fashion Dialog</button>
-        <dialog id="fashion-dialog">
-            <h2>Exclusive Fashion News!</h2>
-            <p>Get the latest updates on fashion trends directly in your inbox.</p>
-            <button onclick="document.getElementById('fashion-dialog').close()">Close</button>
-        </dialog>
-
     </article>
 
-    <!-- Sustainability Section -->
+    <!-- Section on sustainable fashion practices -->
     <article id="sustainability">
-        <h2>Sustainable Fashion Practices</h2>
-        <address>
-            Fashion Insights, 123 Trend Ave, New York, NY 10001
-        </address>
-        <p><small>Reduce, Reuse, Recycle</small> are key components of sustainable fashion.</p>
+        <h4>Guess the 7 Rs of Sustainable Fashion</h4>
         <details>
-            <summary>See the 7 Rs of Sustainable Fashion</summary>
+            <summary><code>Click here</code> to see the 7 Rs of Fashion</summary>
             <ol>
                 <li>Reduce</li>
                 <li>Reuse</li>
@@ -138,11 +170,33 @@
                 <li>Rent</li>
             </ol>
         </details>
-
+        <!-- Adding an SVG graphic -->
+        <svg width="130" height="130">
+            <circle cx="70" cy="70" r="50" stroke="black" stroke-width="3" fill="red" />
+            <text x="70" y="70" dy=".3em" text-anchor="middle" font-family="Arial" font-size="15" fill="white">
+                Stop wasting
+            </text>
+        </svg>
+        <h1>Environmental Impact</h1>
+        <img src="https://www.europarl.europa.eu/resources/library/images/20230613PHT98335/20230613PHT98335_original.png"
+             alt="Environmental impact"
+             usemap="#europarl"
+             width="300"
+             height="450">
+        <!-- Define the map -->
+        <map name="europarl">
+            <!-- Rectangular area -->
+            <area shape="rect" coords="50,50,250,200" alt="Text 1" href="https://www.theguardian.com/global-development/2023/may/31/stop-dumping-your-cast-offs-on-us-ghanaian-clothes-traders-tell-eu">
+        </map>
         <p>Fashion formula: H<sub>2</sub>O + CO<sub>2</sub> → Sustainable fashion (CO<sup>2</sup>-neutral).</p>
     </article>
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+    </video>
 
-    <!-- Contact Section -->
+    <!-- Contact section with a form for user feedback -->
     <section id="contact">
         <h2>Contact Us</h2>
         <form action="submit_form.php" method="post">
@@ -157,8 +211,14 @@
                 <button type="submit">Submit</button>
             </fieldset>
         </form>
+        <br>
+        <address>
+            Written by <a href="mailto:brigita.kasemets@vikk.ee">Brigita Kasemets</a>.<br>
+            Visit us at: Example.com, Kuu 564, Tartu, Estonia.
+        </address>
     </section>
 
+    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Fashion Insights. All rights reserved.</p>
         <nav>
@@ -166,13 +226,11 @@
         </nav>
     </footer>
 </main>
-
 <template id="trend-template">
     <div>
-        <h4>New Trend</h4>
-        <p>This template can be reused to showcase a new trend.</p>
+        <h4>New Trend Alert</h4>
+        <samp>This template can be used to showcase a new trend.</samp>
     </div>
 </template>
-
 </body>
 </html>
