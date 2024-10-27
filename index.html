@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fashion industry trends 2024 with sustainability tips">
     <title>Fashion Industry Insights 2024</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Inline styles for quick layout settings */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
         table {
             width: 100%;
-            border-collapse: collapse; /* Remove spacing between table cells */
+            border-collapse: collapse;
         }
         th, td {
             border: 1px solid #9d82e2;
@@ -31,7 +30,6 @@
 <header>
     <h1>Fashion Industry Insights 2024</h1>
     <nav>
-        <!-- Navigation for quick links within the page -->
         <ul>
             <li><a href="#trends">Fashion Trends</a></li>
             <li><a href="#sustainability">Sustainability</a></li>
@@ -43,22 +41,23 @@
 <main>
     <article id="trends">
         <h2>Top Fashion Trends for 2024</h2>
-        <p>The fashion industry in 2024 is all about <strong>bold designs</strong> and sustainable materials.</p>
+        <p>The fashion industry in 2024 is all about <mark>bold designs</mark> and sustainable materials.</p>
         <p><del>Last year's trends are gone!</del> <ins>The new ones are in bold colors and oversized accessories.</ins></p>
 
+        <p>CTA <abbr title="Call To Action">CTA</abbr> is essential in modern fashion campaigns.</p>
+
         <audio controls autoplay>
-            <source src="https:/siinonmuusika.ee" type="audio/ogg"/>
+            <source src="https://siinonmuusika.ee" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
 
-        <picture>
-            <img src="https://media.vogue.co.uk/photos/65f165aefaaee6751df370fd/1:1/w_960,c_limit/fall-2024-trend-report-F24_TR_1440x1080-r3.png" alt="2024 Fashion Trends" width="500" height="500">
+        <figure>
+            <img src="https://media.vogue.co.uk/photos/65f165aefaaee6751df370fd/1:1/w_960,c_limit/fall-2024-trend-report-F24_TR_1440x1080-r3.png" alt="2024 Fashion Trends" width="500">
             <figcaption>The most striking 2024 fashion trends in a single image.</figcaption>
-        </picture>
+        </figure>
 
         <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your fashion ideas.</p>
 
-        <!-- Dropdown menu for selecting fashion styles -->
         <label for="style-select">Choose a fashion style:</label>
         <select id="style-select" name="styles">
             <optgroup label="Casual Wear">
@@ -73,47 +72,70 @@
 
         <hr>
 
-        <!-- Video embed from YouTube for visual content -->
         <h3>Watch trends for Fall 2024:</h3>
-        <iframe width="500" height="315"
-                src="https://www.youtube.com/embed/0uoEBz5pr9M"
-                title="Fashion Highlights 2024"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-        </iframe>
+        <video width="320" height="240" controls>
+            <source src="fashion2024.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        <blockquote>
+        <blockquote cite="https://vogue.com">
             "Fashion is the armor to survive the reality of everyday life." - Bill Cunningham
         </blockquote>
 
-        <!-- Button to open a dialog box with more information -->
-        <button onclick="document.getElementById('fashion-dialog').showModal()">Open Fashion Dialog</button>
-        <dialog id="fashion-dialog">
-            <h2>Exclusive Fashion News!</h2>
-            <p>Get the latest updates on fashion trends directly in your inbox.</p>
-            <button onclick="document.getElementById('fashion-dialog').close()">Close</button>
-        </dialog>
+        <p>Example code snippet:</p>
+        <pre><code>body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}</code></pre>
 
-        <h4>To stand out add this colour to your outfit!</h4>
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #e61313;"></canvas>
-        <script>
-            const c = document.getElementById("myCanvas");
-            let ctx = c.getContext("2d");
-            // Create gradient
-            let grd = ctx.createLinearGradient(0, 0, 200, 0);
-            grd.addColorStop(0,"red");
-            grd.addColorStop(1,"brown");
-            // Fill with gradient
-            ctx.fillStyle = grd;
-            ctx.fillRect(10,10,150,80);
-        </script>
+        <p>Sample text in HTML:</p>
+        <pre><samp>&lt;div&gt;Sample Text&lt;/div&gt;</samp></pre>
+
+        <table>
+            <caption>Fashion Styles Popularity in 2024</caption>
+            <colgroup>
+                <col style="background-color: #f2f2f2;">
+                <col style="background-color: #e6f7ff;">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Style</th>
+                <th>Popularity</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Boho Chic</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Street Style</td>
+                <td>40%</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="2">Data from fashion survey 2024</td>
+            </tr>
+            </tfoot>
+        </table>
+
+        <div>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="purple" />
+            </svg>
+        </div>
+
     </article>
 
-    <!-- Section on sustainable fashion practices -->
     <article id="sustainability">
-        <h2>Guess the 7 Rs of Sustainable Fashion</h2>
+        <h2>Sustainable Fashion Practices</h2>
+        <address>
+            Fashion Insights, 123 Trend Ave, New York, NY 10001
+        </address>
+        <p><small>Reduce, Reuse, Recycle</small> are key components of sustainable fashion.</p>
         <details>
-            <summary>Click here to see the 7 Rs of Fashion</summary>
+            <summary>See the 7 Rs of Sustainable Fashion</summary>
             <ol>
                 <li>Reduce</li>
                 <li>Reuse</li>
@@ -124,11 +146,8 @@
                 <li>Rent</li>
             </ol>
         </details>
-
-        <p>Fashion formula: H<sub>2</sub>O + CO<sub>2</sub> → Sustainable fashion (CO<sup>2</sup>-neutral).</p>
     </article>
 
-    <!-- Contact section with a form for user feedback -->
     <section id="contact">
         <h2>Contact Us</h2>
         <form action="submit_form.php" method="post">
@@ -152,6 +171,13 @@
         </nav>
     </footer>
 </main>
+
+<template id="trend-template">
+    <div>
+        <h4>New Trend</h4>
+        <p>This template can be reused to showcase a new trend.</p>
+    </div>
+</template>
 
 </body>
 </html>
