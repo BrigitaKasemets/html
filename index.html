@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <!-- Metadata for the document -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fashion industry trends 2024 with sustainability tips">
     <title>Fashion Industry Insights 2024</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for styling -->
+    <style>
+        /* Inline styles for quick layout settings */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Remove spacing between table cells */
+        }
+        th, td {
+            border: 1px solid #9d82e2;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(157, 130, 226);
+        }
+    </style>
 </head>
 <body>
 
-<!-- Main header for the document -->
 <header>
     <h1>Fashion Industry Insights 2024</h1>
     <nav>
+        <!-- Navigation for quick links within the page -->
         <ul>
             <li><a href="#trends">Fashion Trends</a></li>
             <li><a href="#sustainability">Sustainability</a></li>
@@ -21,30 +40,25 @@
     </nav>
 </header>
 
-<!-- Section for fashion trends -->
 <main>
     <article id="trends">
         <h2>Top Fashion Trends for 2024</h2>
-        <p>The fashion industry in 2024 is all about <b>bold designs</b> and sustainable materials.</p>
-        <!--using deleted and inserted part -->
-        <p><del>Last year's trends are gone!</del> <ins>the new ones in bold colors and oversized accessories.</ins> </p>
+        <p>The fashion industry in 2024 is all about <strong>bold designs</strong> and sustainable materials.</p>
+        <p><del>Last year's trends are gone!</del> <ins>The new ones are in bold colors and oversized accessories.</ins></p>
 
-        <!-- audio element -->
         <audio controls autoplay>
             <source src="https:/siinonmuusika.ee" type="audio/ogg"/>
             Your browser does not support the audio element.
         </audio>
 
-        <!-- Adding figure and figcaption -->
-        <figure>
+        <picture>
             <img src="https://media.vogue.co.uk/photos/65f165aefaaee6751df370fd/1:1/w_960,c_limit/fall-2024-trend-report-F24_TR_1440x1080-r3.png" alt="2024 Fashion Trends" width="500" height="500">
             <figcaption>The most striking 2024 fashion trends in a single image.</figcaption>
-        </figure>
+        </picture>
 
-        <!-- Using <kbd> -->
         <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your fashion ideas.</p>
 
-        <!-- Interactive dropdown with <select>, <optgroup>, and <option> -->
+        <!-- Dropdown menu for selecting fashion styles -->
         <label for="style-select">Choose a fashion style:</label>
         <select id="style-select" name="styles">
             <optgroup label="Casual Wear">
@@ -53,13 +67,13 @@
             </optgroup>
             <optgroup label="Formal Wear">
                 <option value="classic">Classic</option>
-                <option value="avantgarde">Avant-garde</option>
+                <option value="avant garde">Avant-garde</option>
             </optgroup>
         </select>
 
-        <hr> <!-- Horizontal rule for separation -->
+        <hr>
 
-        <!-- Embed an iframe for external content  -->
+        <!-- Video embed from YouTube for visual content -->
         <h3>Watch trends for Fall 2024:</h3>
         <iframe width="500" height="315"
                 src="https://www.youtube.com/embed/0uoEBz5pr9M"
@@ -67,9 +81,12 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
         </iframe>
-        <br>
-        <br>
-        <!-- Dialog example -->
+
+        <blockquote>
+            "Fashion is the armor to survive the reality of everyday life." - Bill Cunningham
+        </blockquote>
+
+        <!-- Button to open a dialog box with more information -->
         <button onclick="document.getElementById('fashion-dialog').showModal()">Open Fashion Dialog</button>
         <dialog id="fashion-dialog">
             <h2>Exclusive Fashion News!</h2>
@@ -77,11 +94,22 @@
             <button onclick="document.getElementById('fashion-dialog').close()">Close</button>
         </dialog>
 
-        <!-- Adding time element -->
-        <p><abbr title="Tallinn Fashion Week">TTF</abbr> <time datetime="2024-10-22">22.-26.October 2024</time></p>
+        <h4>To stand out add this colour to your outfit!</h4>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #e61313;"></canvas>
+        <script>
+            const c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            // Create gradient
+            let grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"brown");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
     </article>
 
-    <!-- Section on sustainability -->
+    <!-- Section on sustainable fashion practices -->
     <article id="sustainability">
         <h2>Guess the 7 Rs of Sustainable Fashion</h2>
         <details>
@@ -97,37 +125,10 @@
             </ol>
         </details>
 
-        <!-- Example of sample output with <samp> -->
-        <p>When you recycle your old clothes, the system will display the message:</p>
-        <samp>Thank you for recycling your clothes!</samp>
-
-        <!-- Example of subscript and superscript -->
         <p>Fashion formula: H<sub>2</sub>O + CO<sub>2</sub> → Sustainable fashion (CO<sup>2</sup>-neutral).</p>
-
-        <!-- Adding an SVG graphic -->
-        <svg width="130" height="130">
-            <circle cx="70" cy="70" r="50" stroke="black" stroke-width="3" fill="red" />
-            <text x="70" y="70" dy=".3em" text-anchor="middle" font-family="Arial" font-size="15" fill="white">
-                Stop wasting
-            </text>
-        </svg>
-
-        <h1>Environmental Impact</h1>
-
-        <img src="https://www.europarl.europa.eu/resources/library/images/20230613PHT98335/20230613PHT98335_original.png"
-             alt="Environmental impact"
-             usemap="#europarl"
-             width="300"
-             height="450">
-
-        <!-- Define the map -->
-        <map name="europarl">
-            <!-- Rectangular area -->
-            <area shape="rect" coords="50,50,250,200" alt="Text 1" href="https://www.theguardian.com/global-development/2023/may/31/stop-dumping-your-cast-offs-on-us-ghanaian-clothes-traders-tell-eu">
-        </map>
     </article>
 
-    <!-- Contact form -->
+    <!-- Contact section with a form for user feedback -->
     <section id="contact">
         <h2>Contact Us</h2>
         <form action="submit_form.php" method="post">
@@ -137,22 +138,20 @@
                 <input type="text" id="name" name="name" required><br><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
                 <button type="submit">Submit</button>
             </fieldset>
         </form>
-        <br>
-        <address>
-            Written by <a href="mailto:brigita.kasemets@vikk.ee">Brigita Kasemets</a>.<br>
-            Visit us at: Example.com, Kuu 564, Tartu, Estonia.
-        </address>
     </section>
-    <!-- Footer section -->
+
     <footer>
         <p>&copy; 2024 Fashion Insights. All rights reserved.</p>
         <nav>
             <a href="#trends">Back to Top</a>
         </nav>
     </footer>
-    </main>
+</main>
+
 </body>
 </html>
