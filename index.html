@@ -39,6 +39,7 @@
 </header>
 
 <main>
+    <!-- Fashion Trends Section -->
     <article id="trends">
         <h2>Top Fashion Trends for 2024</h2>
         <p>The fashion industry in 2024 is all about <mark>bold designs</mark> and sustainable materials.</p>
@@ -52,8 +53,10 @@
         </audio>
 
         <figure>
-            <img src="https://media.vogue.co.uk/photos/65f165aefaaee6751df370fd/1:1/w_960,c_limit/fall-2024-trend-report-F24_TR_1440x1080-r3.png" alt="2024 Fashion Trends" width="500">
-            <figcaption>The most striking 2024 fashion trends in a single image.</figcaption>
+            <picture>
+                <img src="https://media.vogue.co.uk/photos/65f165aefaaee6751df370fd/1:1/w_960,c_limit/fall-2024-trend-report-F24_TR_1440x1080-r3.png" alt="2024 Fashion Trends" width="500">
+            </picture>
+            <figcaption><cite>The most striking 2024 fashion trends in a single image.</cite></figcaption>
         </figure>
 
         <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your fashion ideas.</p>
@@ -73,10 +76,12 @@
         <hr>
 
         <h3>Watch trends for Fall 2024:</h3>
-        <video width="320" height="240" controls>
-            <source src="fashion2024.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe width="500" height="315"
+                src="https://www.youtube.com/embed/0uoEBz5pr9M"
+                title="Fashion Highlights 2024"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
 
         <blockquote cite="https://vogue.com">
             "Fashion is the armor to survive the reality of everyday life." - Bill Cunningham
@@ -91,43 +96,30 @@
         <p>Sample text in HTML:</p>
         <pre><samp>&lt;div&gt;Sample Text&lt;/div&gt;</samp></pre>
 
-        <table>
-            <caption>Fashion Styles Popularity in 2024</caption>
-            <colgroup>
-                <col style="background-color: #f2f2f2;">
-                <col style="background-color: #e6f7ff;">
-            </colgroup>
-            <thead>
-            <tr>
-                <th>Style</th>
-                <th>Popularity</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Boho Chic</td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <td>Street Style</td>
-                <td>40%</td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <td colspan="2">Data from fashion survey 2024</td>
-            </tr>
-            </tfoot>
-        </table>
+        <!-- Dynamic content using canvas -->
+        <h4>Add this color to your outfit!</h4>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #e61313;"></canvas>
+        <script>
+            const c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            let grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"brown");
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+        </script>
 
-        <div>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="purple" />
-            </svg>
-        </div>
+        <!-- Dialog for exclusive content -->
+        <button onclick="document.getElementById('fashion-dialog').showModal()">Open Fashion Dialog</button>
+        <dialog id="fashion-dialog">
+            <h2>Exclusive Fashion News!</h2>
+            <p>Get the latest updates on fashion trends directly in your inbox.</p>
+            <button onclick="document.getElementById('fashion-dialog').close()">Close</button>
+        </dialog>
 
     </article>
 
+    <!-- Sustainability Section -->
     <article id="sustainability">
         <h2>Sustainable Fashion Practices</h2>
         <address>
@@ -146,8 +138,11 @@
                 <li>Rent</li>
             </ol>
         </details>
+
+        <p>Fashion formula: H<sub>2</sub>O + CO<sub>2</sub> → Sustainable fashion (CO<sup>2</sup>-neutral).</p>
     </article>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
         <form action="submit_form.php" method="post">
